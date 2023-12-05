@@ -1,0 +1,457 @@
+body{
+    background-color: rgb(244, 245, 209);
+}
+#blind{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(244, 245, 200, 80%);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem .3rem;
+}
+header *{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+}
+header a:hover{
+    border-bottom: 2px solid black;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    margin: 0px .3rem;
+}
+#logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+#logIn{
+    background-color: rgb(119, 196, 119);
+    font-size: 1.3rem;
+    padding: .2rem;
+    border: 1px solid black;
+}
+#signUp{
+    background-color: rgb(119, 172, 196);
+    font-size: 1.3rem;
+    padding: .2rem;
+    border: 1px solid black;
+}
+
+#search{
+    width: 30rem;
+    height: 1.4rem;
+    
+}
+button{
+    height: 1.4rem;
+    background-color: rgb(119, 196, 119);
+    border: 1px solid black;
+}
+
+.showcase1,.showcase2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.showcase1 div{
+    border: 2px solid black;
+    width: 15rem;
+    height: 15rem;
+    margin: .5rem;
+}
+.showcase2 div{
+    border: 2px solid black;
+    width: 15rem;
+    height: 15rem;
+    margin: .5rem;
+}
+#postImage{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+.comment{
+    display: flex;
+    background-color: gray;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 3rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+}
+.comment img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    margin: .5rem;
+}
+.comment div{
+    border-radius: 1rem;
+    background-color: rgb(158, 158, 158);
+    padding-right: 5rem;
+    margin: .4rem;
+    height: fit-content;
+}
+.comment div .name{
+    font-weight: bold;
+}
+
+.image img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+#loginForm{
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    position: fixed;
+    right: 0px;
+    left: 35vw;
+    top: 30vh;
+    bottom: 0;
+}
+
+:root{
+    --primary-color: #fff;
+    /* --secondary-color: hsl(223, 47%, 50%); */
+    --secondary-color: hsl(123, 27%,10%);
+}
+
+section.form{
+    width: 400px;
+    background-color: #b8b8b8;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs input{
+    margin: .7rem 0rem;
+    background-color: #ddd;
+    border: transparent;
+    border-radius: 5px;
+    padding: 1.2rem;
+}
+.welcome{
+    margin-bottom: 1.8rem;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #444;
+}
+button.loginButton{
+    width: 100%;
+    height: max-content;
+    margin: 1.5rem 0rem 2rem 0rem;
+    background-color: var(--secondary-color);
+    border: .2rem solid transparent;
+    padding: .5rem;
+    font-size: 16px;
+    border-radius: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+button.loginButton:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: .2rem solid black;
+}
+.register{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-color: hsl(223, 47%, 30%);
+    text-underline-offset: 5px;
+}
+.register:hover{
+    text-decoration-color: var(--primary-color);
+    cursor: pointer;
+}
+#burger{
+    border: transparent;
+    background-color: transparent;
+}
+
+
+
+footer{
+    background-color: rgb(58, 58, 58);
+    color: hsl(0, 0%, 55%);
+    font-weight: 400;
+    font-size: 17px;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 15px;
+}
+footer .logo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+footer a{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul{
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footlogodesc{
+    margin-top: 2rem;
+}
+footer *{
+    margin: .5rem;
+    margin-left: .3rem;
+    margin-right: .9rem;
+}
+.Description{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bottomContainers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+li a{
+    color: #aaaaaa;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+li a:hover{
+    text-decoration: underline;
+}
+#twittwer{
+    font-size: 1rem;
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+    nav *{
+        font-size: 1.2rem;
+    }
+    #search{
+        width: 20rem;
+        height: 1rem;
+    }
+    #burger{
+        display: none;
+    }
+    .showcase1{
+        position: relative;
+        top: 3rem;
+    }
+    #hd{
+        position: relative;
+        top: 1.4rem;
+        margin: 4rem 0rem 2rem 0rem;
+    }
+    .showcase1,.showcase2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .showcase1 div{
+        border: 2px solid black;
+        width: 20rem;
+        height: 20rem;
+        margin: .2rem;
+    }
+    .showcase2 div{
+        border: 2px solid black;
+        width: 20rem;
+        height: 20rem;
+        margin: .2rem;
+    }
+    .image img{
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    nav *{
+        font-size: 1.2rem;
+    }
+    #search{
+        width: 20rem;
+        height: 1rem;
+    }
+    #burger{
+        display: none;
+    }
+    .showcase1{
+        position: relative;
+        top: 3rem;
+    }
+    #hd{
+        position: relative;
+        top: 1.4rem;
+        margin: 4rem 0rem 2rem 0rem;
+    }
+    .showcase1,.showcase2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .showcase1 div{
+        border: 2px solid black;
+        width: 15rem;
+        height: 15rem;
+        margin: .2rem;
+    }
+    .showcase2 div{
+        border: 2px solid black;
+        width: 15rem;
+        height: 15rem;
+        margin: .2rem;
+    }
+    .image img{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:770px) {
+    nav *{
+        font-size: 1.2rem;
+    }
+    #search{
+        width: 20rem;
+        height: 1rem;
+    }
+    #burger{
+        display: none;
+    }
+    .showcase1{
+        position: relative;
+        top: 3rem;
+    }
+    #hd{
+        position: relative;
+        top: 1.4rem;
+        margin: 4rem 0rem 2rem 0rem;
+    }
+    .showcase1,.showcase2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .showcase1 div{
+        border: 2px solid black;
+        width: 15rem;
+        height: 15rem;
+        margin: .2rem;
+    }
+    .showcase2 div{
+        border: 2px solid black;
+        width: 15rem;
+        height: 15rem;
+        margin: .2rem;
+    }
+    .image img{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #burger{
+        display: block;
+    }
+    #navig{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 1rem;
+        top: 2.5rem;
+    }
+    nav *{
+        font-size: 1.2rem;
+    }
+    #search{
+        width: 10rem;
+        height: 1rem;
+    }
+    .login{
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        left: 0;
+        margin: .6rem;
+    }
+    .showcase1{
+        position: relative;
+        top: 3rem;
+        
+        justify-content: center;
+    }
+    .showcase1,.showcase2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .showcase1 div{
+        border: 2px solid black;
+        width: 10rem;
+        height: 10rem;
+        margin: .2rem;
+    }
+    .showcase2 div{
+        border: 2px solid black;
+        width: 10rem;
+        height: 10rem;
+        margin: .2rem;
+    }
+    .image img{
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+}
